@@ -80,24 +80,10 @@ class BilletterieController extends Controller
         $commande = $session->get('commande');
         $mail = $commande->getMail();
 
-        /*$message = (new \Swift_Message('Test mail'))
-            ->setFrom('n.duvieusart@gmail.com')
-            ->setTo($mail)
-            ->setBody('Corps du mail !');
-
-        $mailer->send($message);*/
-
-        /*$this->getMailer()->composeAndSend(
-            'n.duvieusart@gmail.com',
-            $mail,
-            'Confirmation de commande',
-            'Corps du mail !'
-        );*/
-
         $message = \Swift_Message::newInstance()
             ->setSubject('Confirmation de commande')
-            ->setFrom(array('n.duvieusart@gmail.com' => 'DUVIEUSART Nathan'))
-            ->setTo('n.duvieusart@gmail.com')
+            ->setFrom(array('assistance-billetterie@louvre.fr' => 'Service client'))
+            ->setTo($mail)
             ->setBody('Contenu du mail', 'text/plain', 'UTF-8')
         ;
 
