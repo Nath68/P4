@@ -1,0 +1,20 @@
+mlbilletterie_homepage:
+    path:     /
+    defaults: { _controller: MLbilletterieBundle:Billetterie:index }
+    
+resume:
+    path:   /resume
+    defaults:   { _controller: MLbilletterieBundle:Billetterie:resume }
+    
+order_prepare:
+    path:   /prepare
+    defaults:   { _controller: MLbilletterieBundle:Billetterie:prepare }
+    
+order_checkout:
+    path:   /checkout
+    defaults:   { _controller: MLbilletterieBundle:Billetterie:checkout }
+    methods: POST
+    
+mail:
+    path:   /mail
+    defaults:   { _controller: MLbilletterieBundle:Billetterie:mail }

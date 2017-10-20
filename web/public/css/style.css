@@ -1,0 +1,13 @@
+#title {
+  padding-top: 50px;
+}
+
+h1 {
+    color: red;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

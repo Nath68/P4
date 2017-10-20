@@ -1,0 +1,7 @@
+mlbilletterie:
+    resource: "@MLbilletterieBundle/Resources/config/routing.yml"
+    prefix:   /billetterie
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
