@@ -1,15 +1,13 @@
 var dateAuj = new Date();
-
+startDate = dateAuj;
+var heure = dateAuj.getHours();
+var dateFormatAuj = (dateAuj.getMonth()+1)+'/'+dateAuj.getDate()+'/'+dateAuj.getFullYear();
+dateAuj = dateFormatAuj;
 var todayDisable = '';
-/*if (heure >= 18) {
-    todayDisable = dateAuj;var heure = dateAuj.getHours();
-}*/
-
-
 
 $('.calendar').datepicker({
     format: "dd-mm-yyyy",
-    startDate: dateAuj,
+    startDate: startDate,
     keyboardNavigation: false,
     autoclose: true,
     maxViewMode: 2,
@@ -26,12 +24,15 @@ $('.calendar').change(function (){
     var dateFormat = dateChoisie.split('-');
     dateChoisie = dateFormat[1]+'/'+dateFormat[0]+'/'+dateFormat[2];
     console.log(dateChoisie);
-    dateChoisie = new Date(dateChoisie);
-    //dateChoisie = dateChoisie.setDate(dateChoisie.getDate()+1);
-    if (dateChoisie == dateAuj) {
-        alert('Test');
-    }
-    console.log(dateChoisie);
     console.log(dateAuj);
-    $('#ml_billetteriebundle_commandes_duree').prop('checked', 'true');
+    console.log(heure);
+
+    if (dateChoisie == dateAuj && heure >= 14) {
+        alert('Il est plus de 14h, seule la commande de demi-journée est disponible.');
+        $('#ml_billetteriebundle_commandes_duree').prop('checked', true).attr('disabled', true);
+    }
+    else {
+        $('#ml_billetteriebundle_commandes_duree').prop('checked', false).removeAttr('disabled');
+    }
+
 });

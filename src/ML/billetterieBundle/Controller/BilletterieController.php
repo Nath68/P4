@@ -65,6 +65,9 @@ class BilletterieController extends Controller
                 "description" => "Commande n° ".$commande->getCode()
             ));
             $this->addFlash("success","Paiement validé !");
+
+            //FLUSH DB !
+
             return $this->redirectToRoute("mail");
         } catch(\Stripe\Error\Card $e) {
 

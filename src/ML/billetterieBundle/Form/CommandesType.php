@@ -19,12 +19,6 @@ class CommandesType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $date = new \DateTime('NOW');
-        $heure = $date->format('H');
-        $etat = false;
-        /*if ($heure >= 14) {
-            $etat = true;
-        }*/
         //->add('dateCmd')
         $builder->add('dateVisite', DateType::class, array('label' => 'Date de visite',
             'widget' => 'single_text', 'format' => 'dd-MM-yyyy',
@@ -44,7 +38,7 @@ class CommandesType extends AbstractType
 
             
 
-        ->add('duree', CheckboxType::class, array('required' => false, 'label' => 'Demi-journée', 'data' => $etat, 'disabled' => $etat))
+        ->add('duree', CheckboxType::class, array('required' => false, 'label' => 'Demi-journée'))
         ->add('billets', CollectionType::class, array('entry_type' => BilletsType::class,
             'allow_add' => true, 'allow_delete' => true, 'by_reference' => false))
         ->add('Commander', SubmitType::class);
