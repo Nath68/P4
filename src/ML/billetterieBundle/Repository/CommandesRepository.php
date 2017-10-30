@@ -1,6 +1,7 @@
 <?php
 
 namespace ML\billetterieBundle\Repository;
+use Symfony\Component\Validator\Constraints\Count;
 
 /**
  * CommandesRepository
@@ -10,4 +11,16 @@ namespace ML\billetterieBundle\Repository;
  */
 class CommandesRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function checkBillets($dateVisite) {
+        $qb = $this->createQueryBuilder('c')
+        ->select('sum(c.nbrBillets)')
+        ->where('c.dateVisite = :dateVisite')
+        ->setParameter(':dateVisite', $dateVisite)
+        ->getQuery()
+        ->getSingleScalarResult();
+
+        if ($qb >= 1000) {
+            return true;
+        }
+    }
 }

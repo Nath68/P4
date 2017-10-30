@@ -5,6 +5,7 @@ namespace ML\billetterieBundle\Controller;
 use ML\billetterieBundle\Entity\Billets;
 use ML\billetterieBundle\Form\BilletsType;
 use ML\billetterieBundle\Form\CommandesType;
+use ML\billetterieBundle\Repository\CommandesRepository;
 use ML\billetterieBundle\Services\Calculator;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use ML\billetterieBundle\Entity\Commandes;
@@ -22,15 +23,22 @@ class BilletterieController extends Controller
 
         if ($formC -> handleRequest($request) && $formC->isValid()) {
             $em = $this->getDoctrine()->getManager();
+
+            $maxBillets = $this->getDoctrine()->getRepository("MLbilletterieBundle:Commandes")
+                ->checkBillets($commande->getDateVisite());
+            if ($maxBillets == true) {
+                $this->addFlash("notice","Nombre maximum de billets atteint pour le jour sélectionné !");
+                return $this->render('MLbilletterieBundle:Billetterie:index.html.twig', array('formC'=>$formC->createView()));
+            }
+
             $this->get('app.calculator')->calculTarif($commande);
-            $em->persist($commande);
             $session = $request->getSession();
             $session->set('commande', $commande);
+
         }
 
         if ($request->isMethod('POST')) {
             if ($formC->isValid()) {
-                //$em->flush();
                 return $this->render('MLbilletterieBundle:Billetterie:resume.html.twig', array('commande'=>$commande));
             }
         }
@@ -56,7 +64,6 @@ class BilletterieController extends Controller
         $tarif = $commande->getTarif();
         $tarif *= 100;
 
-        // Create a charge: this will charge the user's card
         try {
             \Stripe\Charge::create(array(
                 "amount" => $tarif, // Amount in cents
@@ -64,16 +71,18 @@ class BilletterieController extends Controller
                 "source" => $token,
                 "description" => "Commande n° ".$commande->getCode()
             ));
-            $this->addFlash("success","Paiement validé !");
+            $this->addFlash("notice","Paiement validé !");
 
             //FLUSH DB !
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($commande);
+            $em->flush();
 
             return $this->redirectToRoute("mail");
         } catch(\Stripe\Error\Card $e) {
 
             $this->addFlash("error","Paiement refusé !");
             return $this->redirectToRoute("order_prepare");
-            // The card has been declined
         }
     }
 
@@ -84,11 +93,13 @@ class BilletterieController extends Controller
         $mail = $commande->getMail();
 
         $message = \Swift_Message::newInstance()
-            ->setSubject('Confirmation de commande')
+            ->setSubject('Confirmation de commande n°'.$commande->getCode())
             ->setFrom(array('assistance-billetterie@louvre.fr' => 'Service client'))
             ->setTo($mail)
-            ->setBody('Contenu du mail', 'text/plain', 'UTF-8')
+            ->setContentType("text/html")
         ;
+        $img = $message->embed(\Swift_Image::fromPath('public/img/logo-louvre.jpg'));
+        $message->setBody($this->renderView('MLbilletterieBundle:Billetterie:mail.html.twig', array('commande'=>$commande, 'img'=>$img)));
 
         $this->get('mailer')->send($message);
 

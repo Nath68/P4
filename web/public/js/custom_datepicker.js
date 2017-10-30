@@ -3,7 +3,11 @@ startDate = dateAuj;
 var heure = dateAuj.getHours();
 var dateFormatAuj = (dateAuj.getMonth()+1)+'/'+dateAuj.getDate()+'/'+dateAuj.getFullYear();
 dateAuj = dateFormatAuj;
-var todayDisable = '';
+
+if (heure >= 18) {
+    var todayDisable = dateAuj;
+}
+
 
 $('.calendar').datepicker({
     format: "dd-mm-yyyy",
@@ -16,7 +20,7 @@ $('.calendar').datepicker({
     daysOfWeekDisabled: "0,2",
     calendarWeeks: true,
     todayHighlight: true,
-    datesDisabled: [todayDisable]
+    datesDisabled: [todayDisable, '01/05/2017', '01/11/2017', '25/12/2017', '01/05/2018', '01/11/2018', '25/12/2018', '01/05/2019', '01/11/2019', '25/12/2019']
 });
 
 $('.calendar').change(function (){

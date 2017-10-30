@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% block title %}Confirmation de commande{% endblock %}</title>
+
+  {% block stylesheets %}
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="{{ asset('public/css/style.css') }}" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.min.css" />
+  {% endblock %}
+</head>
+
+<body>
+  <div class="container">
+    <div id="title" class="text-center">
+      <p><img src="{{ img }}" alt="Logo Louvre"></p>
+        <h1>Musée du Louvre</h1>
+        <h3>Confirmation de commande</h3>
+      <p class="lead">Commande n°{{ commande.code }}</p>
+    </div>
+    <p>Mail : {{ commande.mail }}</p>
+    <p>Date de réservation : {{ commande.dateVisite|date('d/m/Y') }}</p>
+    <p>Le prix total de la commande s'élève à {{ commande.tarif }} €.</p>
+    <p>Liste des visiteurs :
+    {% for billets in commande.billets %}
+    <p>{{ billets.prenom }} {{ billets.nom }}</p>
+    {% endfor %}
+  </div>
+</body>
+</html>

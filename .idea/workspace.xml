@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34f1b5e7-00ea-4d10-ba30-b94f4bc54bf9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/mail.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ML/billetterieBundle/Tests/Services/CalculatorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/P4.iml" afterPath="$PROJECT_DIR$/.idea/P4.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ML/billetterieBundle/Controller/BilletterieController.php" afterPath="$PROJECT_DIR$/src/ML/billetterieBundle/Controller/BilletterieController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ML/billetterieBundle/Form/CommandesType.php" afterPath="$PROJECT_DIR$/src/ML/billetterieBundle/Form/CommandesType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Billets.php" afterPath="$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Billets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ML/billetterieBundle/Repository/CommandesRepository.php" afterPath="$PROJECT_DIR$/src/ML/billetterieBundle/Repository/CommandesRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/index.html.twig" afterPath="$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/resume.html.twig" afterPath="$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/resume.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/css/style.css" afterPath="$PROJECT_DIR$/web/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/public/js/custom_datepicker.js" afterPath="$PROJECT_DIR$/web/public/js/custom_datepicker.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,14 +25,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.50239235">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="BilletterieController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Controller/BilletterieController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1596">
-                  <caret line="76" column="9" lean-forward="false" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+                <state relative-caret-position="210">
+                  <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
                   <folding>
                     <element signature="e#51#91#0#PHP" expanded="true" />
                   </folding>
@@ -30,11 +40,21 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="CommandesRepository.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Repository/CommandesRepository.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="462">
+                  <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/index.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+                <state relative-caret-position="546">
+                  <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -43,8 +63,28 @@
           <file leaf-file-name="resume.html.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/resume.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1008">
-                  <caret line="48" column="42" lean-forward="false" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+                <state relative-caret-position="504">
+                  <caret line="24" column="142" lean-forward="false" selection-start-line="24" selection-start-column="142" selection-end-line="24" selection-end-column="142" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DefaultControllerTest.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Tests/Controller/DefaultControllerTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mail.html.twig" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/mail.html.twig">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -53,39 +93,31 @@
           <file leaf-file-name="prepare.html.twig" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/prepare.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="483">
-                  <caret line="23" column="82" lean-forward="false" selection-start-line="23" selection-start-column="82" selection-end-line="23" selection-end-column="82" />
+                <state relative-caret-position="441">
+                  <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="news_visitors.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/web/public/js/news_visitors.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="818">
-                  <caret line="66" column="3" lean-forward="false" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="custom_datepicker.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="custom_datepicker.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/web/public/js/custom_datepicker.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="714">
-                  <caret line="34" column="97" lean-forward="false" selection-start-line="34" selection-start-column="97" selection-end-line="34" selection-end-column="97" />
+                <state relative-caret-position="252">
+                  <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AppKernel.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+          <file leaf-file-name="CalculatorTest.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Tests/Services/CalculatorTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="735">
-                  <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-                  <folding />
+                <state relative-caret-position="462">
+                  <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#136#181#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -93,8 +125,8 @@
           <file leaf-file-name="Calculator.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Services/Calculator.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="546">
-                  <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+                <state relative-caret-position="21">
+                  <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
                   <folding>
                     <element signature="e#6#87#0#PHP" expanded="true" />
                   </folding>
@@ -116,11 +148,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Commandes.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Commandes.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Commandes.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+                <state relative-caret-position="590">
+                  <caret line="276" column="0" lean-forward="false" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
                   <folding>
                     <element signature="e#47#95#0#PHP" expanded="true" />
                   </folding>
@@ -128,10 +160,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="CommandesType.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="CommandesType.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Form/CommandesType.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="613">
+                <state relative-caret-position="714">
                   <caret line="42" column="82" lean-forward="false" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
                   <folding>
                     <element signature="e#45#81#0#PHP" expanded="true" />
@@ -143,8 +175,8 @@
           <file leaf-file-name="Billets.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Billets.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="147">
-                  <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+                <state relative-caret-position="1491">
+                  <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -181,17 +213,20 @@
       <list>
         <option value="$PROJECT_DIR$/web/public/css/style.css" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Billets.php" />
         <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Commandes.php" />
         <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Form/BilletsType.php" />
         <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Services/Calculator.php" />
         <option value="$PROJECT_DIR$/web/public/js/news_visitors.js" />
+        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/prepare.html.twig" />
+        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Form/CommandesType.php" />
+        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Billets.php" />
+        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Repository/CommandesRepository.php" />
+        <option value="$PROJECT_DIR$/web/public/js/custom_datepicker.js" />
+        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Controller/BilletterieController.php" />
+        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/mail.html.twig" />
         <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/index.html.twig" />
         <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/resume.html.twig" />
-        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/prepare.html.twig" />
-        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Controller/BilletterieController.php" />
-        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Form/CommandesType.php" />
-        <option value="$PROJECT_DIR$/web/public/js/custom_datepicker.js" />
+        <option value="$PROJECT_DIR$/src/ML/billetterieBundle/Tests/Services/CalculatorTest.php" />
       </list>
     </option>
   </component>
@@ -215,7 +250,9 @@
     <option name="width" value="1938" />
     <option name="height" value="1060" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -231,7 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,6 +323,14 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ML" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="billetterieBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ML" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="billetterieBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -316,11 +360,38 @@
               <item name="billetterieBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Services" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ML" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="billetterieBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ML" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="billetterieBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="P4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="P4" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ML" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="billetterieBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Services" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,20 +442,24 @@
       <workItem from="1508343724456" duration="556000" />
       <workItem from="1508414033620" duration="14552000" />
       <workItem from="1508480813408" duration="5558000" />
-      <workItem from="1508594621668" duration="5124000" />
+      <workItem from="1508594621668" duration="5244000" />
+      <workItem from="1508686709094" duration="4656000" />
+      <workItem from="1509088411510" duration="3450000" />
+      <workItem from="1509354864865" duration="11497000" />
+      <workItem from="1509376764446" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113729000" />
+    <option name="totallyTimeSpent" value="134051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12928177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12916666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -413,42 +488,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Billets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Form/CommandesType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
-          <folding>
-            <element signature="e#45#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Form/BilletsType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-          <folding>
-            <element signature="e#45#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Commandes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1701">
@@ -473,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -527,7 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -571,7 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
           <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -623,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -667,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="29" column="82" lean-forward="false" selection-start-line="29" selection-start-column="82" selection-end-line="29" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,48 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Services/Calculator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/resume.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="48" column="42" lean-forward="false" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/prepare.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="82" lean-forward="false" selection-start-line="23" selection-start-column="82" selection-end-line="23" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Form/BilletsType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -792,45 +783,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Billets.php">
+    <entry file="file://$PROJECT_DIR$/web/public/js/news_visitors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        <state relative-caret-position="1386">
+          <caret line="66" column="3" lean-forward="false" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Repository/CommandesRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Controller/BilletterieController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1596">
-          <caret line="76" column="9" lean-forward="false" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+        <state relative-caret-position="210">
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="e#51#91#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/public/js/news_visitors.js">
+    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/resume.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="818">
-          <caret line="66" column="3" lean-forward="false" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
+        <state relative-caret-position="504">
+          <caret line="24" column="142" lean-forward="false" selection-start-line="24" selection-start-column="142" selection-end-line="24" selection-end-column="142" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Commandes.php">
+    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/prepare.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="50" lean-forward="false" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Tests/Controller/DefaultControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <element signature="e#47#95#0#PHP" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Resources/views/Billetterie/mail.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Form/CommandesType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
+        <state relative-caret-position="714">
           <caret line="42" column="82" lean-forward="false" selection-start-line="42" selection-start-column="82" selection-end-line="42" selection-end-column="82" />
           <folding>
             <element signature="e#45#81#0#PHP" expanded="true" />
@@ -840,9 +867,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/public/js/custom_datepicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="97" lean-forward="false" selection-start-line="34" selection-start-column="97" selection-end-line="34" selection-end-column="97" />
+        <state relative-caret-position="252">
+          <caret line="12" column="25" lean-forward="false" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Billets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1491">
+          <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Entity/Commandes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="276" column="0" lean-forward="false" selection-start-line="276" selection-start-column="0" selection-end-line="276" selection-end-column="0" />
+          <folding>
+            <element signature="e#47#95#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Services/Calculator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ML/billetterieBundle/Tests/Services/CalculatorTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding>
+            <element signature="e#136#181#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

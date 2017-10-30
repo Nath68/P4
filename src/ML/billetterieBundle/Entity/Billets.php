@@ -21,7 +21,7 @@ class Billets
      */
     private $id;
 
-    /**
+    /**tt
      * @var string
      *
      * @ORM\Column(name="nom", type="string", length=255)

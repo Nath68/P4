@@ -22,7 +22,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">ML - Billetterie</a>
+        <a href="http://localhost/p4/web/app_dev.php/billetterie/"><img src="{{ asset('public/img/logo-louvre.jpg') }}" alt="Logo Louvre"></a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
@@ -45,7 +45,6 @@
     {% for billets in commande.billets %}
     <p>{{ billets.prenom }} {{ billets.nom }}</p>
     {% endfor %}
-    </p>
       <form action="{{ path("order_prepare") }}" method="POST">
           <input type="submit" value="Valider" />
       </form>
@@ -53,7 +52,8 @@
   </div><!-- /.container -->
 
   <footer class="footer">
-      <div><p>Nathan DUVIEUSART © {{ 'now'|date('Y') }}</p></div>
+    <div><p><img src="{{ asset('public/img/logo-louvre.jpg') }}" alt="Logo Louvre"></p>
+      <p>Musée du Louvre © {{ 'now'|date('Y') }}</p></div>
   </footer>
 
 </body>
