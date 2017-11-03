@@ -1,7 +1,7 @@
 var dateAuj = new Date();
 startDate = dateAuj;
 var heure = dateAuj.getHours();
-var dateFormatAuj = (dateAuj.getMonth()+1)+'/'+dateAuj.getDate()+'/'+dateAuj.getFullYear();
+var dateFormatAuj = (("0" + (dateAuj.getMonth() + 1)).slice(-2))+'/'+("0" + dateAuj.getDate()).slice(-2)+'/'+dateAuj.getFullYear();
 dateAuj = dateFormatAuj;
 
 if (heure >= 18) {

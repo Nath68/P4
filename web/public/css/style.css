@@ -15,3 +15,13 @@ h1 {
 .footer p {
     text-align: center;   
 }
+
+#ml_billetteriebundle_commandes {
+    width: 50%;
+}
+
+form[name="ml_billetteriebundle_commandes"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
