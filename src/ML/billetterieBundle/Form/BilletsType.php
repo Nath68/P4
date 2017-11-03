@@ -22,7 +22,7 @@ class BilletsType extends AbstractType
             ->add('prenom', TextType::class, array('label' => 'Prénom'))
             ->add('pays', TextType::class, array('label' => 'Pays'))
             ->add('dateNaissance', BirthdayType::class, array('label' => 'Date de naissance', 'format' => 'dd-MM-yyyy'/*, 'attr' => array('years' => 100)*/))
-            ->add('tarifReduit', CheckboxType::class, array('required' => false, 'label' => 'Tarif réduit (étudiant, employé du musée, ministère de la culture, militaire...)'));
+            ->add('tarifReduit', CheckboxType::class, array('required' => false, 'label' => 'Tarif réduit [Présentation carte obligatoire] (étudiant, employé du musée, ministère de la culture, militaire...)'));
     }
     
     /**
