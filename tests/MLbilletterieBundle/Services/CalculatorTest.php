@@ -16,13 +16,16 @@ class CalculatorTest extends TestCase
 {
     public function testcalculTarif() {
         $commande = new Commandes();
-        $commande->setDateVisite('02/11/2017')->setDuree(false);
+        $commande->setDateVisite(new \DateTime('2017/02/11'));
+        $commande->setDuree(false);
         $billet = new Billets();
-        $billet->setDateNaissance('16/09/1993')
-        ->setTarifReduit(false);
+        $billet->setDateNaissance(new \DateTime('1993/09/16'));
+        $billet->setTarifReduit(false);
         $commande->addBillet($billet);
 
-        $result = Calculator::class->calculTarif($commande);
-        $this->assertSame(8, $result);
-    }
+        $calculator = new Calculator();
+        $calculator->calculTarif($commande);
+        $this->assertEquals(8, $commande->getTarif());
+        $this->assertEquals(1, $commande->getNbrBillets());
+}
 }

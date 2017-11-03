@@ -22,7 +22,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a href="http://localhost/p4/web/app_dev.php/billetterie/"><img src="{{ asset('public/img/logo-louvre.jpg') }}" alt="Logo Louvre"></a>
+        <a href="http://louvre.fr"><img src="{{ asset('public/img/logo-louvre.jpg') }}" alt="Logo Louvre"></a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
@@ -38,11 +38,11 @@
       <h1>Billetterie du Musée du Louvre</h1>
       <p class="lead">Bienvenue sur notre système de billetterie. A partir d'ici vous pouvez réserver et acheter vos tickets d'entrée au musée.</p>
     </div>
-      <h1>{% for flashMessage in app.session.flashbag.get('notice') %}
+      <h2>{% for flashMessage in app.session.flashbag.get('notice') %}
 
           {{ flashMessage }}
 
-      {% endfor %}</h1>
+      {% endfor %}</h2>
     {{ form(formC) }}
 
   </div><!-- /.container -->

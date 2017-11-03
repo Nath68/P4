@@ -19,8 +19,6 @@ class CommandesRepository extends \Doctrine\ORM\EntityRepository
         ->getQuery()
         ->getSingleScalarResult();
 
-        if ($qb >= 1000) {
-            return true;
-        }
+        return $qb >= 1000 ? true : false;
     }
 }

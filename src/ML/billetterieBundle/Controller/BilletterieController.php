@@ -37,10 +37,8 @@ class BilletterieController extends Controller
 
         }
 
-        if ($request->isMethod('POST')) {
-            if ($formC->isValid()) {
-                return $this->render('MLbilletterieBundle:Billetterie:resume.html.twig', array('commande'=>$commande));
-            }
+        if ($formC->isSubmitted() && $formC->isValid()) {
+            return $this->render('MLbilletterieBundle:Billetterie:resume.html.twig', array('commande'=>$commande));
         }
 
 
