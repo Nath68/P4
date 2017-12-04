@@ -16,5 +16,5 @@ order_checkout:
     methods: POST
     
 mail:
-    path:   /mail
+    path:   /mail/{code}
     defaults:   { _controller: MLbilletterieBundle:Billetterie:mail }

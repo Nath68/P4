@@ -11,6 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use ML\billetterieBundle\Entity\Commandes;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Constraints\Valid;
+use ML\billetterieBundle\Repository;
 
 class BilletterieController extends Controller
 {
@@ -76,7 +77,7 @@ class BilletterieController extends Controller
             $em->persist($commande);
             $em->flush();
 
-            return $this->redirectToRoute("mail");
+            return $this->redirectToRoute("mail", array('code'=>$commande->getCode()));
         } catch(\Stripe\Error\Card $e) {
 
             $this->addFlash("error","Paiement refusé !");
@@ -84,10 +85,13 @@ class BilletterieController extends Controller
         }
     }
 
-    public function mailAction(Request $request)
+    public function mailAction($code)
     {
-        $session = $request->getSession();
-        $commande = $session->get('commande');
+        $em = $this->getDoctrine()->getManager();
+        $query = $em->createQuery('SELECT c FROM MLbilletterieBundle:Commandes c WHERE c.code = :code');
+        $query->setParameter('code', $code);
+        $commande = $query->getSingleResult();
+
         $mail = $commande->getMail();
 
         $message = \Swift_Message::newInstance()
